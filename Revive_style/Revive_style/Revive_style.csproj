@@ -142,6 +142,10 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\capo.png" />
+    <Content Include="Assets\carrello.png" />
+    <Content Include="Assets\hamburger.png" />
+    <Content Include="Assets\info.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

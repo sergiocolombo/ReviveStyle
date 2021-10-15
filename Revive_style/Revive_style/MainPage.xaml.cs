@@ -26,5 +26,15 @@ namespace Revive_style
         {
             this.InitializeComponent();
         }
+
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void CarrelloButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
