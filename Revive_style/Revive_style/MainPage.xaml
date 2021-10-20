@@ -42,7 +42,7 @@
                            Foreground="#2d9093" Margin="0"/>
                 </StackPanel>
                 <Button x:Name="CarrelloButton"
-                            Click="HamburgerButton_Click" Background="#2d9093"
+                            Click="CarrelloButton_Click" Background="#2d9093"
                             HorizontalAlignment="Right">
                     <Image Source="Assets/carrello.png" Height="39"/>
                 </Button>
@@ -52,7 +52,7 @@
             <Grid Grid.Row="1">
                 <SplitView x:Name="MySplitView"
                        DisplayMode="CompactOverlay"
-                       OpenPaneLength="285"
+                       OpenPaneLength="170"
                        CompactPaneLength="57">
                     <SplitView.Pane>
                         <ListBox SelectionMode="Single"
@@ -66,7 +66,7 @@
                                 </StackPanel>
                             </ListBoxItem>
 
-                            <ListBoxItem x:Name="AboutListItem">
+                            <ListBoxItem x:Name="InfoListItem">
                                 <StackPanel Orientation="Horizontal">
                                     <Image Source="Assets/info.png" Height="33" Margin="2"/>
                                     <TextBlock Text="Info" Style="{StaticResource listText}"/>
