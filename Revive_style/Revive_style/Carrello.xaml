@@ -7,8 +7,49 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <Style TargetType="TextBlock" x:Key="CarattereTextBlock">
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="Margin" Value="10"/>
+            
+        </Style>
 
-    <Grid>
+        
 
+    </Page.Resources>
+    <Grid Background="#85D689">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock  Text="Capi Acquistati"  FontSize="60" HorizontalAlignment="Center"/>
+        <TextBlock Grid.Row="1" Style="{StaticResource CarattereTextBlock}" />
+        <TextBlock Grid.Row="2" Style="{StaticResource CarattereTextBlock}"/>
+        <TextBlock Grid.Row="3" Style="{StaticResource CarattereTextBlock}"/>
+        <TextBlock Grid.Row="4" Style="{StaticResource CarattereTextBlock}"/>
+        <TextBlock Grid.Row="5" Style="{StaticResource CarattereTextBlock}"/>
+        <TextBlock Grid.Row="6" Style="{StaticResource CarattereTextBlock}"/>
+        <TextBlock Grid.Row="7" Style="{StaticResource CarattereTextBlock}"/>
+        <TextBlock Grid.Row="8" Style="{StaticResource CarattereTextBlock}"/>
+        <TextBlock Grid.Row="9" Style="{StaticResource CarattereTextBlock}"/>
+        <TextBlock Grid.Row="10" Style="{StaticResource CarattereTextBlock}"/>
+        <TextBlock Grid.Row="11" Style="{StaticResource CarattereTextBlock}"/>
+        <TextBlock Grid.Row="12" Style="{StaticResource CarattereTextBlock}"/>
     </Grid>
 </Page>

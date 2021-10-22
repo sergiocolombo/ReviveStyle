@@ -56,5 +56,10 @@ namespace Revive_style
         {
             MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
         }
+
+        private void HamburgerButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
