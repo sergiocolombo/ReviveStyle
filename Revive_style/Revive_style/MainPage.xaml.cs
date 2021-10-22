@@ -36,5 +36,10 @@ namespace Revive_style
         {
 
         }
+
+        private void HamburgerButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
