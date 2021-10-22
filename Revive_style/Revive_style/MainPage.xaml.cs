@@ -25,7 +25,7 @@ namespace Revive_style
         public MainPage()
         {
             this.InitializeComponent();
-            Titolo.Text = "Home";
+            Titolo.Text = "Shop";
             ShopListItem.IsSelected = true;
             MyFrame.Navigate(typeof(ZonaVendita));
         }
@@ -49,6 +49,7 @@ namespace Revive_style
         private void CarrelloButton_Click(object sender, RoutedEventArgs e)
         {
             MyFrame.Navigate(typeof(Carrello));
+            Titolo.Text = "Carrello";
         }
 
         private void HamburgerButton_Click(object sender, RoutedEventArgs e)
