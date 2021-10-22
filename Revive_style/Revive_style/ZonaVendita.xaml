@@ -40,7 +40,8 @@
             
         </ScrollViewer>
         <StackPanel Grid.Row="1" Orientation="Horizontal">
-            <!--inserire i dati in piccolo--> 
+            <!--inserire i dati in piccolo-->
+            
         </StackPanel>
     </Grid>
 </Page>

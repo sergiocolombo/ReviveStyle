@@ -142,10 +142,22 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\accessorio1.jpg" />
+    <Content Include="Assets\accessorio2.jpg" />
     <Content Include="Assets\capo.png" />
     <Content Include="Assets\carrello.png" />
+    <Content Include="Assets\felpa1.jpeg" />
+    <Content Include="Assets\felpa2.jpeg" />
+    <Content Include="Assets\gonna1.jpg" />
+    <Content Include="Assets\gonna2.jpg" />
     <Content Include="Assets\hamburger.png" />
     <Content Include="Assets\info.png" />
+    <Content Include="Assets\maglia1.jpg" />
+    <Content Include="Assets\maglia2.jpg" />
+    <Content Include="Assets\pantaloni1.jpg" />
+    <Content Include="Assets\pantaloni2.jpg" />
+    <Content Include="Assets\scarpa1.jpg" />
+    <Content Include="Assets\scarpa2.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
