@@ -8,7 +8,30 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-
+    <Grid Background="#56C194">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <TextBlock Grid.Row="1" Grid.Column="1"  Text="App sviluppata da Sergio Colombo, Francesco Albrigo e Federico Venditti. Il nostro obbiettivo è quello di fornire un applicazione che permetta di acquistare in modo facile i capi di abbigliamento" 
+                   HorizontalAlignment="Center" TextWrapping="Wrap"
+                   VerticalAlignment="Center" FontSize="26" FontStyle="Italic"
+                   />
+        <TextBlock Text=" Recapito telefonico: 3387654210" FontSize="26" HorizontalAlignment="Center"
+                   VerticalAlignment="Center" FontStyle="Italic"
+                   Grid.Column="1" Grid.Row="2"/>
+        <TextBlock Text=" Email aziendale:sergio.colombo@issgreppi.it" FontSize="22"
+                    HorizontalAlignment="Center" VerticalAlignment="Center"
+                   Grid.Column="1" Grid.Row="3" FontStyle="Italic"/>
+        <TextBlock Grid.Row="4" Grid.Column="2" Text="versione 1.0" HorizontalAlignment="Right"/>
     </Grid>
 </Page>
