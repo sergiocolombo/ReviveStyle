@@ -32,13 +32,14 @@ namespace Revive_style
             this.Suspending += OnSuspending;
         }
 
-        public class vestiti
+        public struct vestiti
         {
-            string nome;
-            string taglia;
-            string descrizione;
-            int prezzo;
-            string indirizzoImmagine;
+            public string nome;
+            public string taglia;
+            public string descrizione;
+            public int prezzo;
+            public string indirizzoImmagine;
+            
 
             public vestiti(string nome, string taglia, string descrizione, int prezzo, string indirizzoImmagine)
             {
@@ -48,21 +49,24 @@ namespace Revive_style
                 this.prezzo = prezzo;
                 this.indirizzoImmagine = indirizzoImmagine;
             }
+
         }
 
-        vestiti felpa1 = new vestiti("felpa octopus", "L", "felpa in cotone, in condizioni ottimali con decorazioni rosse", 50, "Assets/felpa1.jpeg");
-        vestiti felpa2 = new vestiti("felpa napapijri", "M", "felpa in cotone, in buona condizioni con box logo napapijri", 40, "Assets/felpa2.jpeg");
-        vestiti maglia1 = new vestiti("maglia gucci", "XL", "maglia box logo del rinomato marchio italiano gucci", 63, "Assets/maglia1.jpg");
-        vestiti maglia2 = new vestiti("maglia jordan", "L", "maglia jordan, perfetta per sport, molto leggera e traspirante", 26, "Assets/maglia2.jpg");
-        vestiti pantalone1 = new vestiti("tuta nike", "M", "tuta in cotone perfetta per attività sportiva", 42, "Assets/pantaloni1.jpg");
-        vestiti pantalone2 = new vestiti("tuta kappa", "L", "tuta kappa, rossa con marchio kappa nero", 30, "Assets/pantaloni2.jpg");
-        vestiti gonna1 = new vestiti("gonna rossa", "S", "gonna rossa economica ma molto elegante", 7, "Assets/gonna1.jpg");
-        vestiti gonna2 = new vestiti("gonna azzurra", "M", "gonna azzurra molto elegante, perfetta per uscite e cene", 15, "Assets/gonna2.jpg");
-        vestiti scarpa1 = new vestiti("Nike VaporMax", "42", "scarpe nike grige, molto comode e perfette per andare a correre", 130, "Assets/scarpa1.jpg");
-        vestiti scarpa2 = new vestiti("Nike Air Force One", "40", "scarpa bianca con dettagli arancio e grigi", 80, "Assets/scarpa2.jpg");
-        vestiti accessorio1 = new vestiti("orecchini pandora", "", "orecchini pandora con fiori", 27, "Assets/accessorio1.jpg");
-        vestiti accessorio2 = new vestiti("felpa octopus", "16", "anello a corona pandora", 15, "Assets/accessorio2.jpg");
 
+        public static vestiti felpa1 = new vestiti("felpa octopus", "L", "felpa in cotone, in condizioni ottimali con decorazioni rosse", 50, "Assets/felpa1.jpeg");
+        public static vestiti felpa2 = new vestiti("felpa napapijri", "M", "felpa in cotone, in buona condizioni con box logo napapijri", 40, "Assets/felpa2.jpeg");
+        public static vestiti maglia1 = new vestiti("maglia gucci", "XL", "maglia box logo del rinomato marchio italiano gucci", 63, "Assets/maglia1.jpg");
+        public static vestiti maglia2 = new vestiti("maglia jordan", "L", "maglia jordan, perfetta per sport, molto leggera e traspirante", 26, "Assets/maglia2.jpg");
+        public static vestiti pantalone1 = new vestiti("tuta nike", "M", "tuta in cotone perfetta per attività sportiva", 42, "Assets/pantaloni1.jpg");
+        public static vestiti pantalone2 = new vestiti("tuta kappa", "L", "tuta kappa, rossa con marchio kappa nero", 30, "Assets/pantaloni2.jpg");
+        public static vestiti gonna1 = new vestiti("gonna rossa", "S", "gonna rossa economica ma molto elegante", 7, "Assets/gonna1.jpg");
+        public static vestiti gonna2 = new vestiti("gonna azzurra", "M", "gonna azzurra molto elegante, perfetta per uscite e cene", 15, "Assets/gonna2.jpg");
+        public static vestiti scarpa1 = new vestiti("Nike VaporMax", "42", "scarpe nike grige, molto comode e perfette per andare a correre", 130, "Assets/scarpa1.jpg");
+        public static vestiti scarpa2 = new vestiti("Nike Air Force One", "40", "scarpa bianca con dettagli arancio e grigi", 80, "Assets/scarpa2.jpg");
+        public static vestiti accessorio1 = new vestiti("orecchini pandora", "", "orecchini pandora con fiori", 27, "Assets/accessorio1.jpg");
+        public static vestiti accessorio2 = new vestiti("felpa octopus", "16", "anello a corona pandora", 15, "Assets/accessorio2.jpg");
+
+        public static vestiti selezionato = new vestiti("", "", "", 0, "");
 
 
         /// <summary>
@@ -91,7 +95,7 @@ namespace Revive_style
                 // Posizionare il frame nella finestra corrente
                 Window.Current.Content = rootFrame;
             }
-
+            
             if (e.PrelaunchActivated == false)
             {
                 if (rootFrame.Content == null)

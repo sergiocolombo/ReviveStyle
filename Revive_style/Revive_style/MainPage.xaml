@@ -46,6 +46,11 @@
                             HorizontalAlignment="Right">
                 <Image Source="Assets/carrello.png" Height="39"/>
             </Button>
+            <Button x:Name="back" Click="back_Click"
+                            HorizontalAlignment="right" Margin="0,0,60,0"
+                            Background="#2d9093">
+                <Image Source="Assets/back.png" Height="39"/>
+            </Button>
         </Grid>
 
         <!--riga 1-->

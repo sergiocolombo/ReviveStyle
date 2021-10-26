@@ -8,40 +8,95 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <!--creo 2 righe la prima con lo ScrollViewer che mostra i capi
-        e la seconda per i dati in basso in piccolo-->
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="100"/>
-        </Grid.RowDefinitions>
-        <ScrollViewer Grid.Row="0">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="auto"/>
-                    <RowDefinition Height="auto"/>
-                    <RowDefinition Height="auto"/>
-                    <RowDefinition Height="auto"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                
-                <Button>
-                    <StackPanel>
-                        <!--immagine-->
-                        <!--testo-->
-                        <!--prezzo-->
-                    </StackPanel>
-                </Button>
-            </Grid>
+    <Page.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Height" Value="350"/>
+            <Setter Property="Width" Value="350"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="5,70,5,0"/>
+        </Style>
+    </Page.Resources>
+
+    <ScrollViewer>
+        <Grid Background="#35A998">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="felpa1" Click="Button_Click">
+                <StackPanel>
+                    <Image Source="Assets/felpa1.jpeg"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="felpa2" Grid.Column="1" Click="Button_Click">
+                <StackPanel>
+                    <Image Source="Assets/felpa2.jpeg"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="maglia1" Grid.Column="2" Click="Button_Click">
+                <StackPanel>
+                    <Image Source="Assets/maglia1.jpg"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="maglia2" Grid.Column="3" Click="Button_Click">
+                <StackPanel>
+                    <Image Source="Assets/maglia2.jpg"/>
+                </StackPanel>
+            </Button>
             
-        </ScrollViewer>
-        <StackPanel Grid.Row="1" Orientation="Horizontal">
-            <!--inserire i dati in piccolo-->
+            <!--riga 2-->
+            <Button x:Name="pantaloni2" Grid.Row="1" Click="Button_Click">
+                <StackPanel>
+                    <Image Source="Assets/pantaloni2.jpg"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="pantaloni1" Grid.Column="1" Grid.Row="1" Click="Button_Click">
+                <StackPanel>
+                    <Image Source="Assets/pantaloni1.jpg"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="gonna2" Grid.Column="2" Grid.Row="1" Click="Button_Click">
+                <StackPanel>
+                    <Image Source="Assets/gonna2.jpg"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="gonna1" Grid.Column="3" Grid.Row="1" Click="Button_Click">
+                <StackPanel>
+                    <Image Source="Assets/gonna1.jpg"/>
+                </StackPanel>
+            </Button>
             
-        </StackPanel>
-    </Grid>
+            <!--live 3-->
+            <Button x:Name="scarpa2" Grid.Row="2" Margin="5,70,5,70" Click="Button_Click">
+                <StackPanel>
+                    <Image Source="Assets/scarpa2.jpg"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="scarpa1" Grid.Column="1" Grid.Row="2" Margin="5,70,5,70" Click="Button_Click">
+                <StackPanel>
+                    <Image Source="Assets/scarpa1.jpg"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="accessorio1" Grid.Column="2" Grid.Row="2" Margin="5,70,5,70" Click="Button_Click">
+                <StackPanel>
+                    <Image Source="Assets/accessorio1.jpg"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="accessorio2" Grid.Column="3" Grid.Row="2" Margin="5,70,5,70" Click="Button_Click">
+                <StackPanel>
+                    <Image Source="Assets/accessorio2.jpg"/>
+                </StackPanel>
+            </Button>
+        </Grid>
+
+    </ScrollViewer>
 </Page>

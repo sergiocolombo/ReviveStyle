@@ -56,5 +56,13 @@ namespace Revive_style
         {
             MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
         }
+
+        private void back_Click(object sender, RoutedEventArgs e)
+        {
+            if (MyFrame.CanGoBack)
+            {
+                MyFrame.GoBack();
+            }
+        }
     }
 }

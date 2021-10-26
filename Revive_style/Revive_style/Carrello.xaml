@@ -11,7 +11,6 @@
         <Style TargetType="TextBlock" x:Key="CarattereTextBlock">
             <Setter Property="FontSize" Value="30"/>
             <Setter Property="Margin" Value="10"/>
-            
         </Style>
 
         

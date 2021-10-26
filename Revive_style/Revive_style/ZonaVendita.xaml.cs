@@ -26,5 +26,50 @@ namespace Revive_style
         {
             this.InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string nome = ((Button)sender).Name;
+            switch (nome)
+            {
+                case "felpa1":
+                    App.selezionato = App.felpa1;
+                    break;
+                case "felpa2":
+                    App.selezionato = App.felpa2;
+                    break;
+                case "maglia1":
+                    App.selezionato = App.maglia1;
+                    break;
+                case "maglia2":
+                    App.selezionato = App.maglia2;
+                    break;
+                case "pantalone1":
+                    App.selezionato = App.pantalone1;
+                    break;
+                case "pantalone2":
+                    App.selezionato = App.pantalone2;
+                    break;
+                case "gonna1":
+                    App.selezionato = App.gonna1;
+                    break;
+                case "gonna2":
+                    App.selezionato = App.gonna2;
+                    break;
+                case "scarpa1":
+                    App.selezionato = App.scarpa1;
+                    break;
+                case "scarpa2":
+                    App.selezionato = App.scarpa2;
+                    break;
+                case "accessorio1":
+                    App.selezionato = App.accessorio1;
+                    break;
+                case "accessorio2":
+                    App.selezionato = App.accessorio2;
+                    break;
+            }
+            this.Frame.Navigate(typeof(VisualizzazioneCapo));
+        }
     }
 }

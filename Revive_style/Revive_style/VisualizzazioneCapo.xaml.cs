@@ -25,6 +25,15 @@ namespace Revive_style
         public VisualizzazioneCapo()
         {
             this.InitializeComponent();
+            Nome.Text = App.selezionato.nome;
+            Taglia.Text = App.selezionato.taglia;
+            Descrizione.Text = App.selezionato.descrizione;
+            Prezzo.Text = App.selezionato.prezzo.ToString();
+        }
+
+        private void AddCarrello_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
