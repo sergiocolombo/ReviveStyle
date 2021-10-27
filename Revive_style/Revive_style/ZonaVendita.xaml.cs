@@ -30,6 +30,7 @@ namespace Revive_style
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             string nome = ((Button)sender).Name;
+            App.button = nome;
             switch (nome)
             {
                 case "felpa1":

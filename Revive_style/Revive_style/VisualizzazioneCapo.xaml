@@ -15,10 +15,11 @@
     <Grid Background="#35A998">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="4*"/>
         </Grid.ColumnDefinitions>
-        <Image x:Name="ImmagineCapo" Margin="20"/>
-        <StackPanel Grid.Column="1" Height="auto" VerticalAlignment="Center">
+        <Image x:Name="ImmagineCapo" Margin="20" Grid.Column="1"/>
+        <StackPanel Grid.Column="2" Height="auto" VerticalAlignment="Center">
             <TextBlock x:Name="Nome" FontSize="40"></TextBlock>
             <TextBlock x:Name="Taglia" FontSize="25"></TextBlock>
             <TextBlock x:Name="Descrizione" FontSize="15"></TextBlock>

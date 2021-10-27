@@ -27,7 +27,7 @@ namespace Revive_style
         {
             this.InitializeComponent();
             Nome.Text = App.selezionato.nome;
-            Taglia.Text = App.selezionato.taglia;
+            Taglia.Text = "Taglia: "+App.selezionato.taglia;
             Descrizione.Text = App.selezionato.descrizione;
             Prezzo.Text = App.selezionato.prezzo.ToString();
 
@@ -38,7 +38,45 @@ namespace Revive_style
 
         private void AddCarrello_Click(object sender, RoutedEventArgs e)
         {
-
+            switch (App.button)
+            {
+                case "felpa1":
+                    App.elementiFelpa1.quantità += 1;
+                    break;
+                case "felpa2":
+                    App.elementiFelpa2.quantità += 1;
+                    break;
+                case "maglia1":
+                    App.elementiMaglia1.quantità += 1;
+                    break;
+                case "maglia2":
+                    App.elementiMaglia2.quantità += 1;
+                    break;
+                case "pantaloni1":
+                    App.elementiPantalone1.quantità += 1;
+                    break;
+                case "pantaloni2":
+                    App.elementiPantalone2.quantità += 1;
+                    break;
+                case "gonna1":
+                    App.elementiGonna1.quantità += 1;
+                    break;
+                case "gonna2":
+                    App.elementiGonna2.quantità += 1;
+                    break;
+                case "scarpa1":
+                    App.elementiScarpa1.quantità += 1;
+                    break;
+                case "scarpa2":
+                    App.elementiScarpa2.quantità += 1;
+                    break;
+                case "accessorio1":
+                    App.elementiAccessorio1.quantità += 1;
+                    break;
+                case "accessorio2":
+                    App.elementiAccessorio2.quantità += 1;
+                    break;
+            }
         }
     }
 }

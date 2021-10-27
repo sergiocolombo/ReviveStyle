@@ -8,9 +8,10 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Page.Resources>
-        <Style TargetType="TextBlock" x:Key="CarattereTextBlock">
+        <Style TargetType="TextBlock">
             <Setter Property="FontSize" Value="30"/>
             <Setter Property="Margin" Value="10"/>
+            <Setter Property="Visibility" Value="Collapsed"/>
         </Style>
 
         
@@ -32,21 +33,24 @@
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
 
             </Grid.RowDefinitions>
-            <TextBlock  Text="Capi Acquistati"  FontSize="60" HorizontalAlignment="Center"/>
-            <TextBlock Grid.Row="1" Style="{StaticResource CarattereTextBlock}" />
-            <TextBlock Grid.Row="2" Style="{StaticResource CarattereTextBlock}"/>
-            <TextBlock Grid.Row="3" Style="{StaticResource CarattereTextBlock}"/>
-            <TextBlock Grid.Row="4" Style="{StaticResource CarattereTextBlock}"/>
-            <TextBlock Grid.Row="5" Style="{StaticResource CarattereTextBlock}"/>
-            <TextBlock Grid.Row="6" Style="{StaticResource CarattereTextBlock}"/>
-            <TextBlock Grid.Row="7" Style="{StaticResource CarattereTextBlock}"/>
-            <TextBlock Grid.Row="8" Style="{StaticResource CarattereTextBlock}"/>
-            <TextBlock Grid.Row="9" Style="{StaticResource CarattereTextBlock}"/>
-            <TextBlock Grid.Row="10" Style="{StaticResource CarattereTextBlock}"/>
-            <TextBlock Grid.Row="11" Style="{StaticResource CarattereTextBlock}"/>
-            <TextBlock Grid.Row="12" Style="{StaticResource CarattereTextBlock}"/>
+            <TextBlock Text="Capi Acquistati"  FontSize="60" Margin="0" HorizontalAlignment="Center" Visibility="Visible"/>
+            <TextBlock x:Name="felpa1" Grid.Row="1"/>
+            <TextBlock x:Name="felpa2" Grid.Row="2"/>
+            <TextBlock x:Name="maglia1" Grid.Row="3"/>
+            <TextBlock x:Name="maglia2" Grid.Row="4"/>
+            <TextBlock x:Name="pantaloni1" Grid.Row="5"/>
+            <TextBlock x:Name="pantaloni2" Grid.Row="6"/>
+            <TextBlock x:Name="gonna1" Grid.Row="7"/>
+            <TextBlock x:Name="gonna2" Grid.Row="8"/>
+            <TextBlock x:Name="scarpa1" Grid.Row="9"/>
+            <TextBlock x:Name="scarpa2" Grid.Row="10"/>
+            <TextBlock x:Name="accessorio1" Grid.Row="11"/>
+            <TextBlock x:Name="accessorio2" Grid.Row="12"/>
+            <Button x:Name="clearCarrello" Click="clearCarrello_Click" HorizontalAlignment="Center" Grid.Row="13"
+                    Content="Svuota Carrello" Width="auto" FontSize="20"/>
         </Grid>
     </ScrollViewer>
 </Page>
