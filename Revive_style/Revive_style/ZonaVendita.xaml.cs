@@ -44,10 +44,10 @@ namespace Revive_style
                 case "maglia2":
                     App.selezionato = App.maglia2;
                     break;
-                case "pantalone1":
+                case "pantaloni1":
                     App.selezionato = App.pantalone1;
                     break;
-                case "pantalone2":
+                case "pantaloni2":
                     App.selezionato = App.pantalone2;
                     break;
                 case "gonna1":

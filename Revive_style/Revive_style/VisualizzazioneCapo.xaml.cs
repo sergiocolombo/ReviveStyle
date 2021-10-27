@@ -28,9 +28,9 @@ namespace Revive_style
             Nome.Text = App.selezionato.nome;
             Taglia.Text = App.selezionato.taglia;
             Descrizione.Text = App.selezionato.descrizione;
-            Prezzo.Text = App.selezionato.prezzo.ToString();
+            Prezzo.Text = App.selezionato.prezzo;
         }
-
+       
         private void AddCarrello_Click(object sender, RoutedEventArgs e)
         {
 
