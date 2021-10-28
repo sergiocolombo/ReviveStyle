@@ -89,18 +89,18 @@ namespace Revive_style
             }
         }
 
-        public static elementiCarrello elementiFelpa1 = new elementiCarrello("Felpa Octopus", "50€", 0);
-        public static elementiCarrello elementiFelpa2 = new elementiCarrello("Felpa Napapijri", "40€", 0);
-        public static elementiCarrello elementiMaglia1 = new elementiCarrello("Maglia Gucci", "63€", 0);
-        public static elementiCarrello elementiMaglia2 = new elementiCarrello("Maglia Jordan", "26€", 0);
-        public static elementiCarrello elementiPantalone1 = new elementiCarrello("Tuta Nike", "42€", 0);
-        public static elementiCarrello elementiPantalone2 = new elementiCarrello("Tuta Kappa", "30€", 0);
-        public static elementiCarrello elementiGonna1 = new elementiCarrello("Gonna rossa", "7€", 0);
-        public static elementiCarrello elementiGonna2 = new elementiCarrello("Gonna azzurra", "15€", 0);
-        public static elementiCarrello elementiScarpa1 = new elementiCarrello("Nike VaporMax", "130€", 0);
+        public static elementiCarrello elementiFelpa1 = new elementiCarrello("Felpa Octopus        ", "50€", 0);
+        public static elementiCarrello elementiFelpa2 = new elementiCarrello("Felpa Napapijri        ", "40€", 0);
+        public static elementiCarrello elementiMaglia1 = new elementiCarrello("Maglia Gucci            ", "63€", 0);
+        public static elementiCarrello elementiMaglia2 = new elementiCarrello("Maglia Jordan        ", "26€", 0);
+        public static elementiCarrello elementiPantalone1 = new elementiCarrello("Tuta Nike               ", "42€", 0);
+        public static elementiCarrello elementiPantalone2 = new elementiCarrello("Tuta Kappa              ", "30€", 0);
+        public static elementiCarrello elementiGonna1 = new elementiCarrello("Gonna rossa             ", "7€", 0);
+        public static elementiCarrello elementiGonna2 = new elementiCarrello("Gonna azzurra        ", "15€", 0);
+        public static elementiCarrello elementiScarpa1 = new elementiCarrello("Nike VaporMax        ", "130€", 0);
         public static elementiCarrello elementiScarpa2 = new elementiCarrello("Nike Air Force One", "80€", 0);
         public static elementiCarrello elementiAccessorio1 = new elementiCarrello("Orecchini Pandora", "27€", 0);
-        public static elementiCarrello elementiAccessorio2 = new elementiCarrello("Anello Pandora", "15€", 0);
+        public static elementiCarrello elementiAccessorio2 = new elementiCarrello("Anello Pandora        ", "15€", 0);
 
 
         /// <summary>
