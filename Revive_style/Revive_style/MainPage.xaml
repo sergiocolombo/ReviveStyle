@@ -8,7 +8,82 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Page.Resources>
+        <Style TargetType="TextBlock" x:Key="listText">
+            <Setter Property="FontSize" Value="25"/>
+            <Setter Property="Margin" Value="20,0,0,0"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Foreground" Value="Black"/>
+        </Style>
 
+        <Style TargetType="Button" x:Key="caratteriBottoniButton">
+            <Setter Property="FontFamily" Value="Segoe MDL2 Assets"/>
+            <Setter Property="FontSize" Value="37"/>
+            <Setter Property="Foreground" Value="#2d9093"/>
+        </Style>
+
+    </Page.Resources>
+    
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="52"/>
+            <RowDefinition Height="*" MinHeight="500"/>
+        </Grid.RowDefinitions>
+
+        <!--riga 0-->
+        <Grid Grid.Row="0" Background="#2d9093">
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="HamburgerButton"
+                            Click="HamburgerButton_Click" Background="#2d9093">
+                    <Image Source="Assets/hamburger.png" Height="39"/>
+                </Button>
+                <TextBlock Name="Titolo" FontSize="37"
+                           Foreground="Black"/>
+            </StackPanel>
+            <Button x:Name="CarrelloButton"
+                            Click="CarrelloButton_Click" Background="#2d9093"
+                            HorizontalAlignment="Right">
+                <Image Source="Assets/carrello.png" Height="39"/>
+            </Button>
+            <Button x:Name="back" Click="back_Click"
+                            HorizontalAlignment="right" Margin="0,0,60,0"
+                            Background="#2d9093">
+                <Image Source="Assets/back.png" Height="39"/>
+            </Button>
+        </Grid>
+
+        <!--riga 1-->
+        <Grid Grid.Row="1">
+            <SplitView x:Name="MySplitView"
+                       DisplayMode="CompactOverlay"
+                       OpenPaneLength="145"
+                       CompactPaneLength="57">
+                <SplitView.Pane>
+                    <ListBox SelectionMode="Single"
+                         SelectionChanged="ListBox_SelectionChanged"
+                         Background="#2d9093">
+
+                        <ListBoxItem x:Name="ShopListItem">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="Assets/capo.png" Height="37"/>
+                                <TextBlock Text="Shop" Style="{StaticResource listText}"/>
+                            </StackPanel>
+                        </ListBoxItem>
+
+                        <ListBoxItem x:Name="InfoListItem">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="Assets/info.png" Height="33" Margin="2"/>
+                                <TextBlock Text="Info" Style="{StaticResource listText}"/>
+                            </StackPanel>
+                        </ListBoxItem>
+
+                    </ListBox>
+                </SplitView.Pane>
+                <SplitView.Content>
+                    <Frame Name="MyFrame"/>
+                </SplitView.Content>
+            </SplitView>
+        </Grid>
     </Grid>
 </Page>

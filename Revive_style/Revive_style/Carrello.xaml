@@ -7,8 +7,50 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Visibility" Value="Collapsed"/>
+        </Style>
 
-    <Grid>
+        
 
-    </Grid>
+    </Page.Resources>
+    <ScrollViewer>
+        <Grid Background="#85D689">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+
+            </Grid.RowDefinitions>
+            <TextBlock Text="Capi Acquistati"  FontSize="60" Margin="0" HorizontalAlignment="Center" Visibility="Visible"/>
+            <TextBlock x:Name="felpa1" Grid.Row="1"/>
+            <TextBlock x:Name="felpa2" Grid.Row="2"/>
+            <TextBlock x:Name="maglia1" Grid.Row="3"/>
+            <TextBlock x:Name="maglia2" Grid.Row="4"/>
+            <TextBlock x:Name="pantaloni1" Grid.Row="5"/>
+            <TextBlock x:Name="pantaloni2" Grid.Row="6"/>
+            <TextBlock x:Name="gonna1" Grid.Row="7"/>
+            <TextBlock x:Name="gonna2" Grid.Row="8"/>
+            <TextBlock x:Name="scarpa1" Grid.Row="9"/>
+            <TextBlock x:Name="scarpa2" Grid.Row="10"/>
+            <TextBlock x:Name="accessorio1" Grid.Row="11"/>
+            <TextBlock x:Name="accessorio2" Grid.Row="12"/>
+            <Button x:Name="clearCarrello" Click="clearCarrello_Click" HorizontalAlignment="Center" Grid.Row="13"
+                    Content="Svuota Carrello" Width="auto" FontSize="20"/>
+        </Grid>
+    </ScrollViewer>
 </Page>

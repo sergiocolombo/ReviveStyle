@@ -32,6 +32,77 @@ namespace Revive_style
             this.Suspending += OnSuspending;
         }
 
+        public struct vestiti
+        {
+            public string nome;
+            public string taglia;
+            public string descrizione;
+            public string prezzo;
+            public string indirizzoImmagine;
+            
+
+            public vestiti(string nome, string taglia, string descrizione, string prezzo, string indirizzoImmagine)
+            {
+                this.nome = nome;
+                this.taglia = taglia;
+                this.descrizione = descrizione;
+                this.prezzo = prezzo;
+                this.indirizzoImmagine = indirizzoImmagine;
+            }
+
+        }
+
+
+        public static vestiti felpa1 = new vestiti("Felpa Octopus", "L", "felpa in cotone, in condizioni ottimali con decorazioni rosse", "50€", "Assets/felpa1.jpeg");
+        public static vestiti felpa2 = new vestiti("Felpa Napapijri", "M", "felpa in cotone, in buona condizioni con box logo napapijri", "40€", "Assets/felpa2.jpeg");
+        public static vestiti maglia1 = new vestiti("Maglia Gucci", "XL", "maglia box logo del rinomato marchio italiano gucci", "63€", "Assets/maglia1.jpg");
+        public static vestiti maglia2 = new vestiti("Maglia Jordan", "L", "maglia jordan, perfetta per sport, molto leggera e traspirante", "26€", "Assets/maglia2.jpg");
+        public static vestiti pantalone1 = new vestiti("Tuta Nike", "M", "tuta in cotone perfetta per attività sportiva", "42€", "Assets/pantaloni1.jpg");
+        public static vestiti pantalone2 = new vestiti("Tuta Kappa", "L", "tuta kappa, rossa con marchio kappa nero", "30€", "Assets/pantaloni2.jpg");
+        public static vestiti gonna1 = new vestiti("Gonna rossa", "S", "gonna rossa economica ma molto elegante", "7€", "Assets/gonna1.jpg");
+        public static vestiti gonna2 = new vestiti("Gonna azzurra", "M", "gonna azzurra molto elegante, perfetta per uscite e cene", "15€", "Assets/gonna2.jpg");
+        public static vestiti scarpa1 = new vestiti("Nike VaporMax", "42", "scarpe nike grige, molto comode e perfette per andare a correre", "130€", "Assets/scarpa1.jpg");
+        public static vestiti scarpa2 = new vestiti("Nike Air Force One", "40", "scarpa bianca con dettagli arancio e grigi", "80€", "Assets/scarpa2.jpg");
+        public static vestiti accessorio1 = new vestiti("Orecchini Pandora", "", "orecchini pandora con fiori", "27€", "Assets/accessorio1.jpg");
+        public static vestiti accessorio2 = new vestiti("Anello Pandora", "16", "anello a corona pandora", "15€", "Assets/accessorio2.jpg");
+
+        public static vestiti selezionato = new vestiti("", "", "","", "");
+
+        static public string button;
+
+        public struct elementiCarrello
+        {
+            public string nome;
+            public string prezzo;
+            public int quantità;
+
+            public elementiCarrello(string nome, string prezzo, int quantità)
+            {
+                this.nome = nome;
+                this.prezzo = prezzo;
+                this.quantità = quantità;
+            }
+
+            public override string ToString()
+            {
+                return nome+"\t\t\tprezzo:"+prezzo+"\t\t\t"+quantità+" pezzi";
+            }
+        }
+
+        public static elementiCarrello elementiFelpa1 = new elementiCarrello("Felpa Octopus        ", "50€", 0);
+        public static elementiCarrello elementiFelpa2 = new elementiCarrello("Felpa Napapijri        ", "40€", 0);
+        public static elementiCarrello elementiMaglia1 = new elementiCarrello("Maglia Gucci            ", "63€", 0);
+        public static elementiCarrello elementiMaglia2 = new elementiCarrello("Maglia Jordan        ", "26€", 0);
+        public static elementiCarrello elementiPantalone1 = new elementiCarrello("Tuta Nike               ", "42€", 0);
+        public static elementiCarrello elementiPantalone2 = new elementiCarrello("Tuta Kappa              ", "30€", 0);
+        public static elementiCarrello elementiGonna1 = new elementiCarrello("Gonna rossa             ", "7€", 0);
+        public static elementiCarrello elementiGonna2 = new elementiCarrello("Gonna azzurra        ", "15€", 0);
+        public static elementiCarrello elementiScarpa1 = new elementiCarrello("Nike VaporMax        ", "130€", 0);
+        public static elementiCarrello elementiScarpa2 = new elementiCarrello("Nike Air Force One", "80€", 0);
+        public static elementiCarrello elementiAccessorio1 = new elementiCarrello("Orecchini Pandora", "27€", 0);
+        public static elementiCarrello elementiAccessorio2 = new elementiCarrello("Anello Pandora        ", "15€", 0);
+
+
         /// <summary>
         /// Richiamato quando l'applicazione viene avviata normalmente dall'utente finale. All'avvio dell'applicazione
         /// verranno usati altri punti di ingresso per aprire un file specifico.
@@ -58,7 +129,7 @@ namespace Revive_style
                 // Posizionare il frame nella finestra corrente
                 Window.Current.Content = rootFrame;
             }
-
+            
             if (e.PrelaunchActivated == false)
             {
                 if (rootFrame.Content == null)
